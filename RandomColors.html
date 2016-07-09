@@ -2,10 +2,10 @@
 <!doctype html>
 <html style="height: 100%;">
 	<head>
-        <meta charset="utf-8">
-        <title>Random Colors</title>
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-        <style>
+	        <meta charset="utf-8">
+	        <title>Random Colors</title>
+	        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	        <style>
 			body{
 				height: 100%;
 				margin: 0px;
@@ -40,7 +40,7 @@
 					display: none;
 				}
 			}
-        </style>
+	        </style>
 	</head>
     <body>
     	<table class="rcTable">
@@ -64,34 +64,34 @@
             </tr>
         </table>
         <script>
-			function randHex(){
-				var inpRand = Math.random();
-				inpRand = Math.floor(inpRand*16);
-				inpRand = inpRand.toString(16);
-				return inpRand;
-			}
-			function randHexColor(){
-				return randHex()+randHex()+randHex()+randHex()+randHex()+randHex();
-			}
-			function hTag(input){
-				return "#"+input;
-			}
-			function setColors(element,color){
-				element.style.backgroundColor = color;
-				element.innerHTML = color;
-			}
-			setColors(document.getElementById("c1"),hTag(randHexColor()));
-			setColors(document.getElementById("c2"),hTag(randHexColor()));
-			setColors(document.getElementById("c3"),hTag(randHexColor()));
-			setColors(document.getElementById("c4"),hTag(randHexColor()));
-			setColors(document.getElementById("c5"),hTag(randHexColor()));
-			setColors(document.getElementById("c6"),hTag(randHexColor()));
-			setColors(document.getElementById("c7"),hTag(randHexColor()));
-			setColors(document.getElementById("c8"),hTag(randHexColor()));
-			setColors(document.getElementById("c9"),hTag(randHexColor()));
-			setColors(document.getElementById("c10"),hTag(randHexColor()));
-			setColors(document.getElementById("c11"),hTag(randHexColor()));
-			setColors(document.getElementById("c12"),hTag(randHexColor()));
+		function randHex(){
+			var inpRand = Math.random();
+			inpRand = Math.floor(inpRand*16);
+			inpRand = inpRand.toString(16);
+			return inpRand;
+		}
+		function randHexColor(){
+			return randHex()+randHex()+randHex()+randHex()+randHex()+randHex();
+		}
+		function hTag(input){
+			return "#"+input;
+		}
+		function setColors(element,color){
+			element.style.backgroundColor = color;
+			element.innerHTML = color;
+		}
+		setColors(document.getElementById("c1"),hTag(randHexColor()));
+		setColors(document.getElementById("c2"),hTag(randHexColor()));
+		setColors(document.getElementById("c3"),hTag(randHexColor()));
+		setColors(document.getElementById("c4"),hTag(randHexColor()));
+		setColors(document.getElementById("c5"),hTag(randHexColor()));
+		setColors(document.getElementById("c6"),hTag(randHexColor()));
+		setColors(document.getElementById("c7"),hTag(randHexColor()));
+		setColors(document.getElementById("c8"),hTag(randHexColor()));
+		setColors(document.getElementById("c9"),hTag(randHexColor()));
+		setColors(document.getElementById("c10"),hTag(randHexColor()));
+		setColors(document.getElementById("c11"),hTag(randHexColor()));
+		setColors(document.getElementById("c12"),hTag(randHexColor()));
         </script>
     </body>
 </html>
